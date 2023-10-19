@@ -1,0 +1,9 @@
+{
+  "liveServer.settings.port": 5501,
+  "java.project.sourcePaths": [
+    "calentador/calentador/src",
+    "Hora/Hora/src",
+    "Cafeteria/Cafeteria/src",
+    ""
+  ]
+}
