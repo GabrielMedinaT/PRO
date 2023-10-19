@@ -1,3 +1,4 @@
+package Switchdias.dias.src;
 public class App {
     public static void main(String[] args) {
         Dias objetoDias = new Dias();
