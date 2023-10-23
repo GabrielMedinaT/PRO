@@ -8,14 +8,14 @@ public class App {
         // Avanzar un segundo
 
 
-        // Cambiar la hora a 12:30:45
-        horaActual.setHora(21);
+        // Cambiar la hora
+        horaActual.setHora(23);
         horaActual.setMinutos(59);
         horaActual.setSegundos(58);
         System.out.println("Hora cambiada: " + horaActual.toString());
-         horaActual.avanzarSegundo();
-         System.out.println("Después de avanzar un segundo: " + horaActual.toString());
-         horaActual.avanzarSegundo();
+        horaActual.avanzarSegundo();
+        System.out.println("Después de avanzar un segundo: " + horaActual.toString());
+        horaActual.avanzarSegundo();
         System.out.println("Después de avanzar un segundo: " + horaActual.toString());
     }
 }
