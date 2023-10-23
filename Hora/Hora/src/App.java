@@ -1,8 +1,8 @@
-package hora.Hora.src;
+
 
 public class App {
   public static void main(String[] args) {
-        Hora horaActual = new Hora();
+       Hora  horaActual = new Hora();
         System.out.println("Hora actual: " + horaActual.toString());
 
         // Avanzar un segundo

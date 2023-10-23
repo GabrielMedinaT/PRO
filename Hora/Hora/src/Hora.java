@@ -1,4 +1,3 @@
-package Hora.Hora.src;
 public class Hora {
     private int hora;
     private int minutos;
