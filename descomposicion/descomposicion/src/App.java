@@ -1,3 +1,4 @@
+package descomposicion.descomposicion.src;
 public class App {
       public static void main(String[] args) {
         // Crear objetos y probar los métodos

@@ -6,14 +6,13 @@ public class Loteria {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int cont = 0;
         System.out.println("comenzar");
-        cont++;
         System.out.print("Indique número entre el 0 y el 99999: ");
         int numero = scanner.nextInt();
         int contador = 0;
 
         System.out.println(numero);
+
 
         do {
             contador++;
@@ -28,7 +27,6 @@ public class Loteria {
         int coste = 30000;
         int euros = contador * 3;
         int dine = coste - euros;
-        String relleno = "0";
         System.out.println("El numero escogido ha sido " + String.format("%05d", numero));
 
         System.out.println("El numero de intentos ha sido " + contador + " por lo que ha tenido que gastar " + euros + " Euros para ganar 30000€");

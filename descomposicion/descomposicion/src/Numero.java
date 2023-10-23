@@ -1,3 +1,4 @@
+package descomposicion.descomposicion.src;
 public class Numero {
     private int valor;
 
