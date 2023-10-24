@@ -1,3 +1,5 @@
+package Hucha.hucha.src;
+
 public class hucha {
     private double saldo;
 

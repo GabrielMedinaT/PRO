@@ -1,3 +1,5 @@
+package Hucha.hucha.src;
+
 public class App {
     public static void main(String[] args) throws Exception {
         hucha hucha1 = new hucha();
