@@ -4,7 +4,7 @@ public class App {
 
     public static void main(String[] args) {
         VisorReloj reloj = new VisorReloj();
-        VisorReloj reloj2 = new VisorReloj(00, 00, 13);
+        VisorReloj reloj2 = new VisorReloj(00, 00, 3);
         reloj.ponerEnHora(23, 59, 58);
         reloj.printReloj();
 
@@ -19,7 +19,7 @@ public class App {
             if (reloj.getHora().equals(reloj2.getHora())) {
                 System.out.println("ALARMA");
             }
-        } while (true && !reloj.getHora().equals(reloj2.getHora()) );
+        } while (true  );
 
 }
 
