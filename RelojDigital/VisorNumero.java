@@ -22,10 +22,7 @@ public class VisorNumero
         return valor;
     }
 
-    /**
-     * Devuelve el valor del visor como una cadena de dos d�gitos
-     * Si el valor es menor que 10 se le a�ade a la iquierda un 0
-     */
+
 
     public String getValorVisor()
     {
