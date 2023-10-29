@@ -1,5 +1,7 @@
 public class Figura {
 
+    //Ejericio 1
+
     public void escribirFigura(int n) {
         int i = 1;
         while (i <= n) {
@@ -12,7 +14,7 @@ public class Figura {
             i++;
         }
     }
-
+    // Ejercicio 2
     public void escribirFiguraDos(int n) {
         int i = 1;
         while (i <= n) {
@@ -26,6 +28,8 @@ public class Figura {
         }
     }
 
+    // Ejercicio 3
+
     public void escribirFiguraTres(int n) {
         int i = 1;
         while (i <= n) {
@@ -38,6 +42,9 @@ public class Figura {
             i++;
         }
     }
+
+    // Ejercicio 4
+
     public void imprimirTablas(int numero) {
         int i = 1;
         while (i <= numero) {
