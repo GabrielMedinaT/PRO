@@ -1,3 +1,4 @@
+package Figura.Figura.src;
 public class App {
 
     public static void main(String[] args) {
@@ -11,3 +12,4 @@ public class App {
         figura.imprimirTablas(6);
     }
 }
+

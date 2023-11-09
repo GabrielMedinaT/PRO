@@ -1,3 +1,4 @@
+package Figura.Figura.src;
 public class Figura {
 
     //Ejericio 1
