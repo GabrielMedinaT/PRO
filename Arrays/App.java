@@ -19,18 +19,36 @@ public class App {
 
         pruebaVectores prueba = new pruebaVectores();
         int[] vector = prueba.crearVector(12);
-        double[] vectorDouble = {1 ,2 , 8 , 9 , 7 , 10 , 9 , 8 , 7 };
+        double[] vectorDouble = { 8 , 9 , 7 , 10 , 9 , 8 , 7 };
         int[] vectorInvertido = prueba.invertirVector(vector);
-        System.out.println("Vector original: ");
-        prueba.imprimirVector(vector);
-        System.out.println("\nVector invertido: ");
-        prueba.imprimirVector(vectorInvertido);
-        System.out.println("\nVector original invertido sin crear copia: ");
-        prueba.imprimirVector(vector);
-        System.out.println("\nVector invertido sin crear copia: ");
-        prueba.invertirVectorSinCopia(vector);
-        prueba.imprimirVector(vector);
-        prueba.calcularMedia(vectorDouble);
+        int [] rotar = {1,2,3,4,5,6,7,8,9,10};
+        //System.out.println("Vector original: ");
+        //prueba.imprimirVector(vector);
+        //System.out.println("\nVector invertido: ");
+        //prueba.imprimirVector(vectorInvertido);
+        //System.out.println("\nVector original invertido sin crear copia: ");
+        //prueba.imprimirVector(vector);
+        //System.out.println("\nVector invertido sin crear copia: ");
+        //prueba.invertirVectorSinCopia(vector);
+        //prueba.imprimirVector(vector);
+        //prueba.calcularMedia(vectorDouble);
+        //prueba.calculaMaximo(vectorDouble);
+        //System.out.println("El maximo es: " + prueba.calculaMaximo(vectorDouble));
+        //prueba.encuentraPares(vector);
+        //*Ejercicio 5.9
+        //prueba.rotarDerecha(rotar);
+
+        prueba.rotarIzquierda(rotar);
+        //prueba.rotarDerecha(rotar);
+        //prueba.rotarDerechaNveces(rotar, 3);
+        //*Ejercicio 5.10
+        //prueba.imprimirVector(prueba.generaArray(10));
+        //*Ejercicio 5.11
+        //prueba.calcularFrecuencias();
+
+
+
+
 
 
         /*for (int i = 0; i < 10; i++) {
