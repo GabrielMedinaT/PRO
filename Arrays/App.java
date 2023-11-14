@@ -22,8 +22,8 @@ public class App {
         double[] vectorDouble = { 8 , 9 , 7 , 10 , 9 , 8 , 7 };
         int[] vectorInvertido = prueba.invertirVector(vector);
         int [] rotar = {1,2,3,4,5,6,7,8,9,10};
-        //System.out.println("Vector original: ");
-        //prueba.imprimirVector(vector);
+        System.out.println("Vector original: ");
+        prueba.imprimirVector(vector);
         //System.out.println("\nVector invertido: ");
         //prueba.imprimirVector(vectorInvertido);
         //System.out.println("\nVector original invertido sin crear copia: ");
@@ -38,7 +38,7 @@ public class App {
         //*Ejercicio 5.9
         //prueba.rotarDerecha(rotar);
 
-        prueba.rotarIzquierda(rotar);
+        //prueba.rotarIzquierda(rotar);
         //prueba.rotarDerecha(rotar);
         //prueba.rotarDerechaNveces(rotar, 3);
         //*Ejercicio 5.10
