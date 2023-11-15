@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Nueva Carpeta/JavaApplication1/src/|5 de Octubre/dia2/src/|ordenador/ordenador/src/|RelojDigital/|monedas/monedas/src/|Cafeteria/Cafeteria/src/|Hora/Hora/src/|calentador/calentador/src/|Arrays UT5/UT5/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="5 de Octubre/dia2/src"/>
+	<classpathentry kind="src" path="Arrays UT5/UT5/src"/>
+	<classpathentry kind="src" path="Cafeteria/Cafeteria/src"/>
+	<classpathentry kind="src" path="calentador/calentador/src"/>
+	<classpathentry kind="src" path="Hora/Hora/src"/>
+	<classpathentry kind="src" path="monedas/monedas/src"/>
+	<classpathentry kind="src" path="Nueva Carpeta/JavaApplication1/src"/>
+	<classpathentry kind="src" path="ordenador/ordenador/src"/>
+	<classpathentry kind="src" path="RelojDigital"/>
+	<classpathentry kind="output" path="5 de Octubre/dia2/bin"/>
+</classpath>

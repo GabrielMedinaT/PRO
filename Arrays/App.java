@@ -25,6 +25,8 @@ public class App {
         System.out.println("9. Genera array");
         System.out.println("10. Calcular frecuencias");
         System.out.println("11. Contar días");
+        System.out.println("12. Estadistica luz solar");
+
         Scanner scanner = new Scanner(System.in);
         int opcion = scanner.nextInt();
 
@@ -77,6 +79,12 @@ public class App {
             case 11:
                 int dias = contador.contarDias(1, 10, 2020);
                 System.out.println("Días transcurridos: " + dias);
+                break;
+            case 12:
+                EstadisticaLuzSolar estadistica = new EstadisticaLuzSolar();
+                System.out.println("Media de horas de sol: " + estadistica.getMediaSol());
+                System.out.println("Mes más soleado: " + estadistica.mesMasSoleado());
+                System.out.println("Mes menos soleado: " + estadistica.mesMenosSoleado());
                 break;
             default:
                 break;
