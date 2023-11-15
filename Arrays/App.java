@@ -1,79 +1,79 @@
 package Arrays;
+
 import java.util.Scanner;
 
 public class App {
     // array de 30 enteros ya predefinidos
 
-
     public static void main(String[] args) {
-        /*int[] notas = new int[10];
-        int posicionNotas = 0;
-        String[] Alumnos = new String[10];
-        int posicionAlumnos = 0;
-        Scanner respuestaSN = new Scanner(System.in);
-        Scanner alumno = new Scanner(System.in);
-        Scanner nota = new Scanner(System.in);
-
-        System.out.println("Bienvenido al sistema de notas");*/
-
 
         pruebaVectores prueba = new pruebaVectores();
         int[] vector = prueba.crearVector(12);
-        double[] vectorDouble = { 8 , 9 , 7 , 10 , 9 , 8 , 7 };
+        double[] vectorDouble = { 8, 9, 7, 10, 9, 8, 7 };
         int[] vectorInvertido = prueba.invertirVector(vector);
-        int [] rotar = {1,2,3,4,5,6,7,8,9,10};
+        int[] rotar = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         System.out.println("Vector original: ");
         prueba.imprimirVector(vector);
-        //System.out.println("\nVector invertido: ");
-        //prueba.imprimirVector(vectorInvertido);
-        //System.out.println("\nVector original invertido sin crear copia: ");
-        //prueba.imprimirVector(vector);
-        //System.out.println("\nVector invertido sin crear copia: ");
-        //prueba.invertirVectorSinCopia(vector);
-        //prueba.imprimirVector(vector);
-        //prueba.calcularMedia(vectorDouble);
-        //prueba.calculaMaximo(vectorDouble);
-        //System.out.println("El maximo es: " + prueba.calculaMaximo(vectorDouble));
-        //prueba.encuentraPares(vector);
-        //*Ejercicio 5.9
-        //prueba.rotarDerecha(rotar);
 
-        //prueba.rotarIzquierda(rotar);
-        //prueba.rotarDerecha(rotar);
-        //prueba.rotarDerechaNveces(rotar, 3);
-        //*Ejercicio 5.10
-        //prueba.imprimirVector(prueba.generaArray(10));
-        //*Ejercicio 5.11
-        //prueba.calcularFrecuencias();
+        System.out.println("Introduzca una opción : ");
+        System.out.println("1. Invertir vector");
+        System.out.println("2. Invertir vector sin copia");
+        System.out.println("3. Calcular media");
+        System.out.println("4. Calcular maximo");
+        System.out.println("5. Encuentra pares");
+        System.out.println("6. Rotar derecha");
+        System.out.println("7. Rotar izquierda");
+        System.out.println("8. Rotar derecha n veces");
+        System.out.println("9. Genera array");
+        System.out.println("10. Calcular frecuencias");
+        Scanner scanner = new Scanner(System.in);
+        int opcion = scanner.nextInt();
 
+        switch (opcion) {
+            case 1:
+                System.out.println("Vector invertido: ");
+                prueba.imprimirVector(vectorInvertido);
 
-
-
-
-
-        /*for (int i = 0; i < 10; i++) {
-            System.out.println("Ingrese el nombre del alumno");
-            Alumnos[posicionAlumnos] = alumno.nextLine();
-            posicionAlumnos++;
-            System.out.println("Ingrese la nota del alumno");
-            notas[posicionNotas] = nota.nextInt();
-            posicionNotas++;
-            System.out.println("Alumno ingresado correctamente");
-            System.out.println("Desea añaadir otro alumno? (S/N)");
-            String respuesta = respuestaSN.nextLine();
-            if (respuesta.equalsIgnoreCase("n")) {
                 break;
-            }
 
-        }
-        System.out.println("Alumnos ingresados: ");
+            case 2:
+                System.out.println("Vector original invertido sin crear copia: ");
+                prueba.imprimirVector(vector);
+                System.out.println("Vector invertido sin crear copia: ");
+                prueba.invertirVectorSinCopia(vector);
+                break;
+            case 3:
+                System.out.println("La media es: " + prueba.calcularMedia(vectorDouble));
+                break;
+            case 4:
+                System.out.println("El maximo es: " + prueba.calculaMaximo(vectorDouble));
+                break;
+            case 5:
+                System.out.println("Los pares son: ");
+                prueba.encuentraPares(vector);
+                break;
+            case 6:
+                System.out.println("Vector rotado a la derecha: ");
+                prueba.rotarDerecha(rotar);
+                break;
+            case 7:
+                System.out.println("Vector rotado a la izquierda: ");
+                prueba.rotarIzquierda(rotar);
+                break;
+            case 9:
+                System.out.println("Vector generado: ");
+                prueba.generaArray(90);
+                break;
 
-        for (int i = 0; i < posicionAlumnos; i++) {
-            System.out.println(Alumnos[i] + " " + notas[i]);
+
+            case 10:
+                prueba.calcularFrecuencias();
+                break;
+
+            default:
+                break;
         }
-        alumno.close();
-        nota.close();
-        respuestaSN.close();*/
+
 
     }
 }

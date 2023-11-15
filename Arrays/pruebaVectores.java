@@ -147,6 +147,12 @@ public class pruebaVectores {
                 i--;
             }
         }
+        for (int i = 0; i < contador; i++) {
+            System.out.print(localPares[i] + " ");
+        }
+        
+
+
         return localPares;
     }
     //*Ejercicio 5.11
