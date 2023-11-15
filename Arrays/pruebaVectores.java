@@ -86,7 +86,7 @@ public class pruebaVectores {
 
     // * Ejercicio 5.9
 
-    public int  rotarDerecha(int[] vector) {
+    public int rotarDerecha(int[] vector) {
         int aux = vector[vector.length - 1];
         for (int i = vector.length - 1; i > 0; i--) {
             vector[i] = vector[i - 1];
@@ -97,14 +97,10 @@ public class pruebaVectores {
         }
         return vector[0];
 
-
-
-
-
     }
 
     // *Ejercicio 5.9 BIS
-    public int  rotarIzquierda(int[] vector) {
+    public int rotarIzquierda(int[] vector) {
         int aux = vector[0];
         for (int i = 0; i < vector.length - 1; i++) {
             vector[i] = vector[i + 1];
@@ -116,17 +112,16 @@ public class pruebaVectores {
         return vector[vector.length - 1];
     }
 
-    //* Ejercicion 5.9 BIS-2
+    // * Ejercicion 5.9 BIS-2
 
     public void rotarDerechaNveces(int[] vector, int n) {
         for (int i = 0; i < n; i++) {
             rotarDerecha(vector);
         }
 
-
     }
 
-    //*Ejercicio 5.9 BIS-3
+    // *Ejercicio 5.9 BIS-3
 
     public void rotarIzquierdaNveces(int[] vector, int n) {
         for (int i = 0; i < n; i++) {
@@ -137,26 +132,25 @@ public class pruebaVectores {
     // *Ejercicio 5.10
     public int[] generaArray(int MAX) {
         int[] localPares = new int[MAX];
-        int contador = 0;
-        for (int i = 0; i < localPares.length; i++) {
-            localPares[i] = Math.round((float) Math.random() * 50);
+
+        for (int i = 0; i < MAX; i++) {
+            localPares[i] = (int) (Math.random() * 50) + 1;
             if (localPares[i] % 2 == 0) {
-                localPares[contador] = localPares[i];
-                contador++;
+                localPares[MAX - 1] = localPares[i];
+
             } else {
                 i--;
             }
         }
-        for (int i = 0; i < contador; i++) {
+        for (int i = 0; i < localPares.length; i++) {
             System.out.print(localPares[i] + " ");
         }
-        
-
 
         return localPares;
     }
-    //*Ejercicio 5.11
-    public  int[] calcularFrecuencias() {
+
+    // *Ejercicio 5.11
+    public int[] calcularFrecuencias() {
         // Tamaño del array para almacenar los números aleatorios
         int n = 100;
 
@@ -185,4 +179,3 @@ public class pruebaVectores {
     }
 
 }
-
