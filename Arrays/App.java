@@ -77,7 +77,7 @@ public class App {
                 prueba.calcularFrecuencias();
                 break;
             case 11:
-                int dias = contador.contarDias(1, 10, 2020);
+                int dias = contador.contarDias(16, 11, 2023);
                 System.out.println("Días transcurridos: " + dias);
                 break;
             case 12:

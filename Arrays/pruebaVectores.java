@@ -152,7 +152,7 @@ public class pruebaVectores {
     // *Ejercicio 5.11
     public int[] calcularFrecuencias() {
         // Tamaño del array para almacenar los números aleatorios
-        int n = 100;
+        int n = 10000000;
 
         // Array para almacenar los números aleatorios
         int[] numerosAleatorios = new int[n];
@@ -160,7 +160,8 @@ public class pruebaVectores {
         // Generar 100 números aleatorios entre 1 y 9 (inclusive)
 
         for (int i = 0; i < n; i++) {
-            numerosAleatorios[i] = Math.round((float) Math.random() * 8 + 1);
+            //numerosAleatorios[i] = Math.round((float) Math.random() * 8 + 1);
+            numerosAleatorios[i] = (int) (Math.random() * 9) + 1;
         }
 
         // Inicializar el array de frecuencias
