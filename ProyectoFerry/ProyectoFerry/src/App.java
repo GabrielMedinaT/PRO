@@ -7,13 +7,13 @@ public class App {
         Pasajeros pasajero3 = new Pasajeros("Maria", (byte) -1);
         Pasajeros pasajero4 = null;
 
-        /*pasajero1.printDetalles();
-        pasajero2.printDetalles();*/
+        pasajero3.printDetalles();
+        pasajero2.printDetalles();
 
 
 
 
-        System.out.println(pasajero2.esMasJovenQue(pasajero2));
+        System.out.println(pasajero1.esMasJovenQue(pasajero4));
 
 
     }

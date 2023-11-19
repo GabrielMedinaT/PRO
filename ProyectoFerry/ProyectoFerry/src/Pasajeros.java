@@ -1,55 +1,40 @@
 package ProyectoFerry.ProyectoFerry.src;
-
 public class Pasajeros {
     private String nombre;
-    private byte edad;
+    private int edad;
 
-    // * Metodo constructor
-
-    // constructor vacio
-
+    // Constructor con un parámetro (inicializa la edad a -1)
     public Pasajeros(String nombre) {
-        this.nombre = nombre;
-        this.edad = 1;
+        this(nombre, -1);
     }
 
-    public Pasajeros(String nombre, byte edad) {
+    // Constructor con dos parámetros
+    public Pasajeros(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
     }
 
-    // * Metodos getters
-
+    // Accesor getNombre()
     public String getNombre() {
-        return this.nombre;
+        return nombre;
     }
 
-    public byte getEdad() {
-        return this.edad;
+    // Accesor getEdad()
+    public int getEdad() {
+        return edad;
     }
 
-    // *Print detalles
-
+    // Accesor printDetalles()
     public void printDetalles() {
-        if (edad >= 0) {
-            System.out.println("Nombre: " + this.nombre + " \nEdad: " + this.edad);
-        } else {
-            System.out.println("Nombre: " + this.nombre + " \nEdad: No especificada");
-        }
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + (edad >= 0 ? edad : "Sin especificar"));
     }
 
-    // *Comprar edad
-
-    public boolean esMasJovenQue(Pasajeros pasajero) {
-        if (this.nombre == null) {
-            return false;
-        } else if (pasajero == null) {
-            return false;
-        } else if (this.edad < pasajero.getEdad()) {
-            return true;
-        } else {
+    // Método esMasJovenQue()
+    public boolean esMasJovenQue(Pasajeros otroPasajero) {
+        if (otroPasajero == null || this.edad < 0 || otroPasajero.getEdad() < 0) {
             return false;
         }
+        return this.edad < otroPasajero.getEdad();
     }
-
 }
