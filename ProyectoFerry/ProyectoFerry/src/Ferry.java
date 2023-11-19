@@ -1,11 +1,12 @@
 package ProyectoFerry.ProyectoFerry.src;
+
 public class Ferry {
-    private Pasajeros asiento1;
-    private Pasajeros asiento2;
-    private Pasajeros asiento3;
+    private Pasajero asiento1;
+    private Pasajero asiento2;
+    private Pasajero asiento3;
     private int numPasajeros;
 
-    // Constructor sin parámetros
+    //*  Constructor sin parámetros
     public Ferry() {
         this.numPasajeros = 0;
         this.asiento1 = null;
@@ -13,12 +14,12 @@ public class Ferry {
         this.asiento3 = null;
     }
 
-    // Accesor getNumeroPasajeros()
+    //* Accesor getNumeroPasajeros()
     public int getNumeroPasajeros() {
         return numPasajeros;
     }
 
-    // Accesor printDetallesPasajeros()
+    //* Accesor printDetallesPasajeros()
     public void printDetallesPasajeros() {
         if (numPasajeros == 0) {
             System.out.println("No hay pasajeros");
@@ -36,8 +37,8 @@ public class Ferry {
         }
     }
 
-    // Mutador añadirPasajero()
-    public boolean añadirPasajero(Pasajeros nuevoPasajero) {
+    //* Mutador añadirPasajero()
+    public boolean añadirPasajero(Pasajero nuevoPasajero) {
         if (numPasajeros == 0) {
             asiento1 = nuevoPasajero;
         } else if (numPasajeros == 1) {
@@ -51,20 +52,20 @@ public class Ferry {
         return true;
     }
 
-    // Mutador añadirPasajeroPorNombre()
+    //* Mutador añadirPasajeroPorNombre()
     public boolean añadirPasajeroPorNombre(String nombre) {
         if (numPasajeros < 3) {
-            Pasajeros nuevoPasajero = new Pasajeros(nombre);
+            Pasajero nuevoPasajero = new Pasajero(nombre);
             return añadirPasajero(nuevoPasajero);
         } else {
             return false; // Ferry lleno
         }
     }
 
-    // Mutador borrarPasajero()
-    public Pasajeros borrarPasajero() {
+    //* Mutador borrarPasajero()
+    public Pasajero borrarPasajero() {
         if (numPasajeros > 0) {
-            Pasajeros pasajeroBorrado = asiento1;
+            Pasajero pasajeroBorrado = asiento1;
             asiento1 = asiento2;
             asiento2 = asiento3;
             asiento3 = null;
@@ -75,8 +76,8 @@ public class Ferry {
         }
     }
 
-    // Método getPasajeroMasJoven()
-    public Pasajeros getPasajeroMasJoven() {
+    //* Método getPasajeroMasJoven()
+    public Pasajero getPasajeroMasJoven() {
         if (numPasajeros == 0) {
             return null; // No hay pasajeros
         } else if (numPasajeros == 1) {
@@ -84,16 +85,27 @@ public class Ferry {
         } else if (numPasajeros == 2) {
             return masJovenDeDos(asiento1, asiento2);
         } else {
-            Pasajeros pasajeroMasJoven12 = masJovenDeDos(asiento1, asiento2);
+            Pasajero pasajeroMasJoven12 = masJovenDeDos(asiento1, asiento2);
             return masJovenDeDos(pasajeroMasJoven12, asiento3);
         }
     }
 
     // Método privado masJovenDeDos()
-    private Pasajeros masJovenDeDos(Pasajeros uno, Pasajeros dos) {
-        if (uno.getEdad() < 0 || dos.getEdad() < 0) {
-            return null; // No se consideran edades no especificadas
+    private Pasajero masJovenDeDos(Pasajero uno, Pasajero dos) {
+        if (uno == null && dos == null) {
+            return null; // Ambos son null, no hay pasajero más joven
+        } else if (uno == null) {
+            return dos; // Uno es null, dos es el más joven
+        } else if (dos == null) {
+            return uno; // Dos es null, uno es el más joven
+        } else if (uno.getEdad() < 0 && dos.getEdad() < 0) {
+            return null; // Ambos tienen edad no especificada, no hay pasajero más joven
+        } else if (uno.getEdad() < 0) {
+            return dos; // Uno tiene edad no especificada, dos es el más joven
+        } else if (dos.getEdad() < 0) {
+            return uno; // Dos tiene edad no especificada, uno es el más joven
+        } else {
+            return uno.getEdad() < dos.getEdad() ? uno : dos;
         }
-        return uno.getEdad() < dos.getEdad() ? uno : dos;
     }
 }

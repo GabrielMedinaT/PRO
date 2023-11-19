@@ -1,15 +1,15 @@
 package ProyectoFerry.ProyectoFerry.src;
-public class Pasajeros {
+public class Pasajero{
     private String nombre;
     private int edad;
 
     // Constructor con un parámetro (inicializa la edad a -1)
-    public Pasajeros(String nombre) {
+    public Pasajero(String nombre) {
         this(nombre, -1);
     }
 
     // Constructor con dos parámetros
-    public Pasajeros(String nombre, int edad) {
+    public Pasajero(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
     }
@@ -31,7 +31,7 @@ public class Pasajeros {
     }
 
     // Método esMasJovenQue()
-    public boolean esMasJovenQue(Pasajeros otroPasajero) {
+    public boolean esMasJovenQue(Pasajero otroPasajero) {
         if (otroPasajero == null || this.edad < 0 || otroPasajero.getEdad() < 0) {
             return false;
         }

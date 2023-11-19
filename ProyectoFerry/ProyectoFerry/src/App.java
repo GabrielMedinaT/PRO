@@ -2,10 +2,10 @@ package ProyectoFerry.ProyectoFerry.src;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Pasajeros pasajero1 = new Pasajeros("Juan", (byte) 20);
-        Pasajeros pasajero2 = new Pasajeros("Pedro", (byte) 30);
-        Pasajeros pasajero3 = new Pasajeros("Maria", (byte) -1);
-        Pasajeros pasajero4 = null;
+        Pasajero pasajero1 = new Pasajero("Juan", (byte) 20);
+        Pasajero pasajero2 = new Pasajero("Pedro", (byte) 30);
+        Pasajero pasajero3 = new Pasajero("Maria", (byte) -1);
+        Pasajero pasajero4 = null;
 
         pasajero3.printDetalles();
         pasajero2.printDetalles();
