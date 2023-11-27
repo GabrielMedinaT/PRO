@@ -89,7 +89,7 @@ public class Fraccion {
 
     public static void main(String[] args) {
         // Ejemplo de uso
-        Fraccion fraccion1 = new Fraccion(4, 2);
+        Fraccion fraccion1 = new Fraccion(4, 1);
         Fraccion fraccion2 = new Fraccion(8, 2);
 
         Fraccion suma = fraccion1.sumar(fraccion2);
