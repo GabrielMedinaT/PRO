@@ -4,8 +4,7 @@ public class Cuadrado {
 
     public void dibujarPatron(int lado, char caracter) {
         for (int i = 0; i < lado; i++) {
-            // Imprime asteriscos seguidos de caracteres específicos en cada fila
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j < i +1; j++) {
                 System.out.print("*");
             }
 
@@ -33,9 +32,8 @@ public class Cuadrado {
     public void dibujarSoloEnElBorde (int lado, char caracter) {
         for (int i = 0; i < lado; i++) {
             for (int j = 0; j < lado; j++) {
-
                 if (i == 0 || i == lado - 1 || j == 0 || j == lado - 1) {
-                    System.out.print(caracter);
+                    System.out.print(caracter );
                 } else {
                     System.out.print(" ");
                 }
@@ -52,10 +50,10 @@ public class Cuadrado {
         System.out.println();
 
 
-        cuadrado.dibujarUnaEquis(20, 'x');
+        cuadrado.dibujarUnaEquis(3, 'x');
         System.out.println();
 
-        cuadrado.dibujarSoloEnElBorde(39, 'x');
+        cuadrado.dibujarSoloEnElBorde(5, 'x');
 
 
     }
