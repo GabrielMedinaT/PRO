@@ -1,23 +1,20 @@
 package CuentaBancaria;
 
-public class CuentaBancaria {
-    private int numertoCuenta;
+public class CuentaBancaria {;
     private double saldo;
-    private String nombre;
+    private String nombre, numertoCuenta;
 
-    public CuentaBancaria(int numertoCuenta, double saldo, String nombre) {
+    public CuentaBancaria(String numertoCuenta, double saldo, String nombre) {
         this.numertoCuenta = numertoCuenta;
         this.saldo = saldo;
         this.nombre = nombre;
     }
 
-    
-
-    public int getNumertoCuenta() {
+    public String getNumertoCuenta() {
         return numertoCuenta;
     }
 
-    public void setNumertoCuenta(int numertoCuenta) {
+    public void setNumertoCuenta(String numertoCuenta) {
         this.numertoCuenta = numertoCuenta;
     }
 
@@ -33,7 +30,6 @@ public class CuentaBancaria {
         }
     }
 
-
     public String getNombre() {
         return nombre;
     }
@@ -46,7 +42,6 @@ public class CuentaBancaria {
         }
     }
 
-
     public void ingresar(double cantidad) {
         if (cantidad < 0) {
             System.out.println("No se puede ingresar una cantidad negativa");
@@ -57,7 +52,10 @@ public class CuentaBancaria {
 
     public void retirar(double cantidad) {
         if (saldo - cantidad < 0) {
+            System.out.println("************ERROR************");
             System.out.println("No se puede retirar más dinero del que hay en la cuenta");
+            System.out.println("************ERROR************");
+
         } else {
             saldo -= cantidad;
         }
@@ -74,6 +72,5 @@ public class CuentaBancaria {
             System.out.println();
         }
     }
-
 
 }

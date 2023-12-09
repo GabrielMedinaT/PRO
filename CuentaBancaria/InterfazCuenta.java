@@ -3,12 +3,22 @@ package CuentaBancaria;
 import java.util.Scanner;
 
 public class InterfazCuenta {
-    CuentaBancaria miCuenta = new CuentaBancaria(123456789, 1000, "Pepe Pérez");
+
+
+
+    Scanner nombre = new Scanner(System.in);
+    CuentaBancaria miCuenta = new CuentaBancaria("123456789", 1000, "Pepe Pérez");
 
     public void menu() {
+        System.out.println("Introduce tu nombre: ");
+        miCuenta.setNombre(nombre.nextLine());
+        System.out.println("Introduce tu número de cuenta: ");
+        miCuenta.setNumertoCuenta(nombre.nextLine());
+        
+
         int opcion;
         do {
-            //2miCuenta.limpiarPantalla();
+            // 2miCuenta.limpiarPantalla();
             System.out.println("Bienvenido a su cuenta bancaria señor/a " + miCuenta.getNombre());
             System.out.println("¿Qué operación desea realizar?");
             System.out.println("*--------------------------------*");
@@ -28,39 +38,55 @@ public class InterfazCuenta {
 
         switch (opcion) {
             case 1:
-                miCuenta.limpiarPantalla();
-                System.out.println("Introduce la cantidad a ingresar");
-                double cantidadIngresar = sc.nextDouble();
-                miCuenta.ingresar(cantidadIngresar);
+                ingresar();
                 break;
             case 2:
-                miCuenta.limpiarPantalla();
-                System.out.println("Introduce la cantidad a retirar");
-                double cantidadRetirar = sc.nextDouble();
-                miCuenta.retirar(cantidadRetirar);
+                retirar();
                 break;
             case 3:
-                miCuenta.limpiarPantalla();
-                System.out.println("Saldo actual: " + miCuenta.getSaldo());
-                System.out.println("Pulse cualquier tecla para continuar......");
-                sc.nextLine();
-                sc.nextLine();
+                verSaldo();
                 break;
             case 4:
-                miCuenta.limpiarPantalla();
-                miCuenta.mostrarInformacion();
-                System.out.println("Pulse cualquier tecla para continuar......");
-                sc.nextLine();
-                sc.nextLine();
-                miCuenta.limpiarPantalla();
+                verInformacion();
                 break;
             case 5:
                 System.out.println("Gracias por utilizar nuestros servicios");
                 break;
             default:
-                System.out.println("Opción incorrecta");
+                System.out.println("OPCION INCORRECTA");
         }
         return opcion;
+    }
+
+    Scanner sc = new Scanner(System.in);
+
+    public void verSaldo() {
+        miCuenta.limpiarPantalla();
+        System.out.println("Saldo actual: " + miCuenta.getSaldo());
+        System.out.println("Pulse cualquier tecla para continuar......");
+        sc.nextLine();
+    }
+
+    public void ingresar() {
+        miCuenta.limpiarPantalla();
+        System.out.println("Introduce la cantidad a ingresar");
+        System.out.println("Saldo actual: " + miCuenta.getSaldo());
+        double cantidadIngresar = sc.nextDouble();
+        miCuenta.ingresar(cantidadIngresar);
+    }
+
+    public void retirar() {
+        miCuenta.limpiarPantalla();
+        System.out.println("Introduce la cantidad a retirar");
+        double cantidadRetirar = sc.nextDouble();
+        miCuenta.retirar(cantidadRetirar);
+    }
+
+    public void verInformacion() {
+        miCuenta.limpiarPantalla();
+        miCuenta.mostrarInformacion();
+        System.out.println("Pulse cualquier tecla para continuar......");
+        sc.nextLine();
     }
 
 }

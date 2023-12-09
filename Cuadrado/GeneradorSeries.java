@@ -8,7 +8,7 @@ public class GeneradorSeries {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 System.out.print(letra + "\t");
-                letra = (char) ((letra - 'A' + 1) % 26 + 'A'); // Siguiente letra en el alfabeto
+                letra = (char) ((letra - 'A' + 1) % 26 + 'A'); 
             }
             System.out.println();
         }
@@ -16,13 +16,12 @@ public class GeneradorSeries {
 
     public void serieLetras() {
         char letra = 'A';
-
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 System.out.print(letra + "\t");
             }
             System.out.println();
-            letra = (char) ((letra - 'A' + 1) % 26 + 'A'); 
+            letra = (char) ((letra - 'A' + 1) % 26 + 'A');
         }
     }
 
