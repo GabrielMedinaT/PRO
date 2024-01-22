@@ -1,0 +1,34 @@
+{
+  "liveServer.settings.port": 5501,
+  "java.project.sourcePaths": [
+    "calentador/calentador/src",
+    "Hora/Hora/src",
+    "Cafeteria/Cafeteria/src",
+    ""
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.provider": "none",
+  "java.debug.settings.onBuildFailureProceed": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#076f02",
+    "activityBar.background": "#076f02",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#8287fd",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#076f02",
+    "statusBar.background": "#043d01",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#076f02",
+    "statusBarItem.remoteBackground": "#043d01",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#043d01",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#043d0199",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#043d01"
+}
