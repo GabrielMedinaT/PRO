@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Club
+comment0.text=\r\n\ Almacena\ detalles\ del\ club\ de\ miembros\r\n\ author\ K\u00EF\u00BF\u00BDlling\ y\ Barnes\r\n
+comment1.params=
+comment1.target=Club()
+comment2.params=miembro
+comment2.target=void\ aniadir(Miembro)
+comment3.params=
+comment3.target=int\ numeroMiembros()
+comment4.params=mes
+comment4.target=int\ incorporadoEnMes(int)
+comment5.params=mes\ anio
+comment5.target=java.util.ArrayList\ borrar(int,\ int)
+comment6.params=
+comment6.target=void\ listarClub()
+numComments=7
