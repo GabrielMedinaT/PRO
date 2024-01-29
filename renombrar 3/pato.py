@@ -100,5 +100,5 @@ def renombrar_archivos():
         print(f"Error al intentar renombrar los archivos: {e}")
 
 
-# Llamar a la función para renombrar los archivos
+# Llamar a la función para renombrar los archivos 4
 renombrar_archivos()
