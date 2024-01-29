@@ -112,7 +112,7 @@ public class Bingo {
 
         for (int i = 0; i < FILAS; i++) {
             for (int j = 0; j < COLUMNAS; j++) {
-                cartonStr.append(carton[i][j]).append("\t");
+                cartonStr.append(carton[i][j]).append("\t\t");
             }
             cartonStr.append("\n");
         }
