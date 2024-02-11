@@ -16,24 +16,33 @@ public class PROFESOR implements Cloneable {
     }
 
     @Override
-    public PROFESOR clone() {
-        PROFESOR objeto = null;
-        try {
-            objeto = (PROFESOR) super.clone();
-            objeto.MATERIAS = new ArrayList<>();
-        } catch (CloneNotSupportedException ex) {
-            System.out.println(" no se puede duplicar");
-        }
-
-        Iterator i = this.MATERIAS.iterator();
-        while (i.hasNext()) {
-            MODULO puntero = (MODULO) i.next();
-            if (puntero != null) {
-                objeto.MATERIAS.add((MODULO) puntero.clone());
-            }
-        }
-        return objeto;
+public PROFESOR clone() throws CloneNotSupportedException {
+    // Creamos un objeto clonado inicializado a null
+    PROFESOR objeto = null;
+    try {
+        // Clonación superficial del objeto PROFESOR actual
+        objeto = (PROFESOR) super.clone();
+        
+        // Inicializamos una nueva lista de materias para el objeto clonado
+        objeto.MATERIAS = new ArrayList<>();
+    } catch (CloneNotSupportedException ex) {
+        // Manejo de excepción si la clonación no es compatible
+        System.out.println(" no se puede duplicar");
     }
+
+    // Iteramos sobre la lista de materias del objeto original
+    Iterator i = this.MATERIAS.iterator();
+    while (i.hasNext()) {
+        // Obtenemos la referencia a cada materia (MODULO)
+        MODULO puntero = (MODULO) i.next();
+        if (puntero != null) {
+            // Si la materia no es nula, la clonamos y la agregamos a la lista de materias del objeto clonado
+            objeto.MATERIAS.add((MODULO) puntero.clone());
+        }
+    }
+    // Devolvemos el objeto clonado que contiene copias profundas de sus materias
+    return objeto;
+}
 
     public void agregarModulo(MODULO M) {
         this.MATERIAS.add(M);
