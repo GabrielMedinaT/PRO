@@ -38,7 +38,12 @@
 /proyectoNetbeans/TestDosDimensiones/build/
 /proyectoNetbeans/Matriz/nbproject/private/
 /proyectoNetbeans/Matriz/build/
+<<<<<<< HEAD
+/proyectoNetbeans/Cadena/nbproject/private/
+/proyectoNetbeans/Cadena/build/
+=======
 /UT6/club/nbproject/private/
+<<<<<<< HEAD
 /UT6/programapractica6O/nbproject/private/
 /UT6/programapractica6O/dist/
 /UT6/programapractica6O/build/
@@ -47,3 +52,11 @@
 /clonar/nbproject/private/
 /JavaApplication29/nbproject/private/
 /JavaApplication29/build/
+=======
+>>>>>>> 41d1503c72812dd3ae58a2b50122a5885a5aec85
+/Aplicacion2/nbproject/private/
+/Aplicacion2/build/
+/programaexameno/nbproject/private/
+/programaexameno/build/
+/programaexameno/dist/
+>>>>>>> a96a49df86df0f70a549343f84d8cbf21a9142a4

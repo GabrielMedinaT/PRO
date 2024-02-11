@@ -1,6 +1,8 @@
 #BlueJ class context
-comment0.target=ClubDemo()
-comment0.text=\nConstructor\ de\ la\ clase\ ClubDemo\n\n
-comment1.target=void\ demo()
-comment1.text=\nA\u00F1adir\ algunos\ miembros\ al\ club,\ y\ mostrar\ cuantos\ hay.\n\n\n
-numComments=2
+comment0.target=ClubDemo
+comment0.text=\n\ Demo\ de\ las\ clases\ Club\ y\ Miembro\n\ author\ K\u00EF\u00BF\u00BDlling\ y\ Barnes\n
+comment1.params=
+comment1.target=ClubDemo()
+comment2.params=
+comment2.target=void\ demo()
+numComments=3
