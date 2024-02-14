@@ -22,25 +22,25 @@ public class Main {
         // Clonar al profesor
         Profesor profesor2 = profesor1.clone();
         profesor2.añadirMateria(materia3);
-        
-        
+
+
         System.out.println("Añado otra materia al profesor 1");
 
         // Añadir otra materia al primer profesor
         profesor1.añadirMateria(new Materia("Fisica"));
 
         // Mostrar las materias de cada profesor
-        System.out.println("Materias del primer profesor:");
+        System.out.println("Nombre profesor 1 = " + profesor1.getNombre()+"\nMaterias del primer profesor:");
         for (Materia materia : profesor1.getMaterias()) {
             System.out.println(materia.getNombre());
         }
 
-        System.out.println("Nombre = "+ profesor2.getNombre() + "\nMaterias del segundo profesor:");
+        System.out.println("Nombre profesor 2 = "+ profesor2.getNombre() + "\nMaterias del segundo profesor:");
         for (Materia materia : profesor2.getMaterias()) {
             System.out.println(materia.getNombre());
         }
-        
-        
-        
+
+
+
     }
 }
