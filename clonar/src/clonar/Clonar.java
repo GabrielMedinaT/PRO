@@ -9,8 +9,9 @@ public class Clonar {
  Punto p2;
  p2 = (Punto) p1.clone();
  p2.lista.add("Julio");
-     System.out.println("p1 "+p1 + "\np2 " + p2);
- 
+ System.out.println("p1 " + p1 + "\np2 " + p2);
+
+
  }
 }
 
