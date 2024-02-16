@@ -6,7 +6,6 @@
 package prestamoherramientas;
 
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  *
@@ -14,7 +13,7 @@ import java.util.Map;
  */
 class Vecino {
     private String nombre;
-    private Map<String , Herramienta> herramientasPrestadas;
+    private HashMap<String , Herramienta> herramientasPrestadas;
 
     public Vecino(String nombre) {
         this.nombre = nombre;
