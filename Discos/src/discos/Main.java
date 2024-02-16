@@ -19,8 +19,8 @@ public class Main {
         D1.agregarCanciones(c1);
         D1.agregarCanciones(c2);
         Discos D2 = D1.clone();
-        D2.eliminarCanciones(c2);
-        D2.agregarCanciones(c3);
+    
+
 
         System.out.println("Disco 1");
         for (Canciones cancion : D1.getCanciones()){
