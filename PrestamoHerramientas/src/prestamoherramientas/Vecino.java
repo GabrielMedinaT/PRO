@@ -2,7 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package prestamoherramientas;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
@@ -10,7 +14,7 @@ package prestamoherramientas;
  */
 class Vecino {
     private String nombre;
-    private Map<String, Herramienta> herramientasPrestadas;
+    private Map<String , Herramienta> herramientasPrestadas;
 
     public Vecino(String nombre) {
         this.nombre = nombre;
@@ -39,4 +43,6 @@ class Vecino {
                     ", Prestado por: " + herramienta.getQuienPresto());
         }
     }
+
+
 }
