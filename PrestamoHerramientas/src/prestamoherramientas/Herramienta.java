@@ -1,16 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package prestamoherramientas;
+class Herramienta {
+    private String nombre;
+    private String fechaPrestamo;
+    private String quienPresto;
 
-/**
- *
- * @author gabriel
- */
-public class Herramienta {
-    private String Tipo;
-    private String fecha;
-    
-    
+    public Herramienta(String nombre, String fechaPrestamo, String quienPresto) {
+        this.nombre = nombre;
+        this.fechaPrestamo = fechaPrestamo;
+        this.quienPresto = quienPresto;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getFechaPrestamo() {
+        return fechaPrestamo;
+    }
+
+    public String getQuienPresto() {
+        return quienPresto;
+    }
 }
