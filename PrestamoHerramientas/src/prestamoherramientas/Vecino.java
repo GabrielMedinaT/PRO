@@ -21,6 +21,10 @@ class Vecino {
         this.herramientasPrestadas = new HashMap<>();
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
     public void prestarHerramienta(String nombreHerramienta, String fechaPrestamo, Vecino vecino) {
         Herramienta herramienta = new Herramienta(nombreHerramienta, fechaPrestamo, vecino.getNombre());
         herramientasPrestadas.put(nombreHerramienta, herramienta);
