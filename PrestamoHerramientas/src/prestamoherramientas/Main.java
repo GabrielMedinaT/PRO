@@ -19,5 +19,8 @@ public class Main {
         juan.herramientasQueHasPrestado();
         System.out.println();
         juan.herramientasQueTeHanPrestado();
+        System.out.println("");
+        ana.herramientasQueHasPrestado();
+        ana.herramientasQueTeHanPrestado();
     }
 }
