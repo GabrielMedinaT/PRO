@@ -14,7 +14,9 @@ public class JavaApplication5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        /*crear vector de 100000 elementos de numeros aleatorios entre el 0 y el 10000 y ordenar solo   los que no se repiten*/
+
+
     }
-    
+
 }

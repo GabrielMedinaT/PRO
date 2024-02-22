@@ -8,22 +8,24 @@ package javaapplication5;
  *
  * @author gabriel
  */
-class Employee {
+class Alumno {
     // Employee has three attributes
     // notas , name, expediente
     public int notas;
-    public String name;
+    public String name, certificacion;
     public Integer expediente;
 
     // default constructor
-    Employee() {
+    Alumno() {
     }
 
     // parameterized constructor
-    Employee(int notas, String name, int expediente) {
+    Alumno(int notas, String name, int expediente, String certificacion) {
         this.notas = notas;
         this.name = name;
         this.expediente = expediente;
+        this.certificacion = certificacion;
+
     }
 
     @Override
