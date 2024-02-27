@@ -39,7 +39,7 @@ public class Cantante {
     System.out.println("*------------------------------*");
     System.out.println("* Disco \t Cancion");
     cancion.forEach((index, song) -> {
-        System.out.println(song.d.cancion + "\t|" + song.cancion);
+        System.out.println(song.cancion+ "\t|" + song.cancion);
     });
 }
 
