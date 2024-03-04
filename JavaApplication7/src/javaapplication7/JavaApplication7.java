@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package javaapplication7;
 
 /**
@@ -10,8 +7,7 @@ package javaapplication7;
  */
 public class JavaApplication7 {
 
-
-   public static boolean resolverSudoku(int[][] board) {
+    public static boolean resolverSudoku(int[][] board) {
         // Encuentra la primera casilla sin asignar
         int[] noAsignado = encuentraSinAsignar(board);
         if (noAsignado[0] == -1) // Si no hay casillas sin asignar, el sudoku está resuelto
@@ -123,26 +119,64 @@ public class JavaApplication7 {
                 { 0, 0, 0, 4, 1, 9, 0, 0, 5 },
                 { 0, 0, 0, 0, 8, 0, 0, 7, 9 }
         };
-                /*int[][] boardLimpia = {
-                { 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-                { 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-                { 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-
-                { 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-                { 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-                { 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-
-                { 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-                { 0, 0, 0,  0, 0, 0,  0, 0, 0 },
-                { 0, 0, 0,  0, 0, 0,  0, 0, 0 }
-        };*/
-
+        /*
+         * int[][] boardLimpia = {
+         * { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+         * { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+         * { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+         *
+         * { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+         * { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+         * { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+         *
+         * { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+         * { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+         * { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+         * };
+         */
 
         if (resolverSudoku(board)) {
             System.out.println("Sudoku resuelto:");
             imprimirSudoku(board);
         } else {
+            System.out.println("+-------+-------+-------+");
+            System.out.println("+-------+-------+-------+");
+            System.out.println("+-------+-------+-------+");
+
             System.out.println("No se pudo resolver el Sudoku.");
+            System.out.println("Asegúrate de que el Sudoku sea válido.");
+
+
+            System.out.println("+-------+-------+-------+");
+            System.out.println("+-------+-------+-------+");
+            System.out.println("+-------+-------+-------+");
+
+            //crear un array de 10 nombres
+            String[] nombres = new String[10];
+            //rellenar array
+            nombres[0] = "Gabriel";
+            nombres[1] = "Medina";
+            nombres[2] = "Gonzalez";
+            nombres[3] = "Luis";
+            nombres[4] = "Miguel";
+            nombres[5] = "Angel";
+            nombres[6] = "Ricardo";
+            nombres[7] = "Javier";
+            nombres[8] = "Alejandro";
+            nombres[9] = "Fernando";
+            //imprimir array
+            for (int i = 0; i < nombres.length; i++) {
+                System.out.println(nombres[i]);
+            }
+
+            //crear funcion que multiplique matrice
+
+
+            //crear funcion que sume matrices
+
+
+
+
         }
     }
 
