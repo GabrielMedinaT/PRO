@@ -5,14 +5,9 @@ public class Color implements Cloneable {
  this.r = r;
  this.g = g;
  this.b = b;
-//EJEMPLO DE CLONACIÓN DE OBJETOS COMPUESTOS PROGRAMACIÓN
  }
 
-    /**
-     *
-     * @return
-     * @throws CloneNotSupportedException
-     */
+
     @Override
  public Object clone() throws CloneNotSupportedException{
  Object obj=null;

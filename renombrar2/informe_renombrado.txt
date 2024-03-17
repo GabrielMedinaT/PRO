@@ -1,18 +1,27 @@
-pato.txt -> patete.txt
-patalete.html -> patote.html
-patete.py -> pato.py
-patico.html -> patalete.html
-patín.html -> patico.html
-patiblanco.html -> patín.html
-patanegra.html -> patiblanco.html
-patiquín.html -> patanegra.html
-patazo.html -> patiquín.html
-patuco.html -> patazo.html
-patuleco.html -> patuco.html
-paton.html -> patuleco.html
-pato.html -> paton.html
-patuleta.html -> pato.html
-patifuso.html -> patuleta.html
-patete.html -> patifuso.html
-patillo.html -> patete.html
-patalón.html -> patillo.html
+index copy 4.html -> pato.html
+index copy 11.html -> patete.html
+index copy 8.html -> patillo.html
+pato.py -> patete.py
+index.html -> patazo.html
+.DS_Store -> pato.DS_Store
+index copy 9.html -> paton.html
+index copy 10.html -> patico.html
+index copy 5.html -> patuco.html
+index copy 21.html -> patote.html
+index copy 2.html -> patín.html
+index copy 17.html -> patalón.html
+index copy 16.html -> patalete.html
+index copy 3.html -> patanegra.html
+index copy 20.html -> patuleco.html
+index copy 19.html -> patuleta.html
+index copy 23.html -> patiquín.html
+index copy 15.html -> patifuso.html
+index copy 14.html -> patiblanco.html
+index copy 22.html -> patiamarillo.html
+index copy 18.html -> patirojo.html
+index copy 13.html -> pativerde.html
+index copy 6.html -> patiazul.html
+index copy 24.html -> patigris.html
+index copy.html -> patianaranjado.html
+index copy 7.html -> patimorado.html
+index copy 12.html -> patirrosado.html
