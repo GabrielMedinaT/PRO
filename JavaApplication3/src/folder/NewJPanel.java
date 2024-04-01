@@ -31,13 +31,8 @@ public class NewJPanel extends javax.swing.JPanel {
         Gato = new javax.swing.JRadioButton();
 
         setBackground(new java.awt.Color(204, 204, 255));
-        addInputMethodListener(new java.awt.event.InputMethodListener() {
-            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
-            }
-            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
-                formInputMethodTextChanged(evt);
-            }
-        });
+
+
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 formKeyPressed(evt);
@@ -49,21 +44,9 @@ public class NewJPanel extends javax.swing.JPanel {
                 TeclaDoMouseEntered(evt);
             }
         });
-        TeclaDo.addInputMethodListener(new java.awt.event.InputMethodListener() {
-            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
-            }
-            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
-                TeclaDoInputMethodTextChanged(evt);
-            }
-        });
         TeclaDo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TeclaDoActionPerformed(evt);
-            }
-        });
-        TeclaDo.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                TeclaDoKeyPressed(evt);
             }
         });
 
@@ -105,11 +88,7 @@ public class NewJPanel extends javax.swing.JPanel {
                 TeclaReActionPerformed(evt);
             }
         });
-        TeclaRe.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                TeclaReKeyPressed(evt);
-            }
-        });
+
 
         Gato.setText("Gato");
         Gato.addActionListener(new java.awt.event.ActionListener() {
@@ -163,8 +142,8 @@ public class NewJPanel extends javax.swing.JPanel {
         if (click && !teclado) {
             try {
                 // Cargamos el archivo de audio
-                File audioFile = new File("src/sources/audio/do.wav"); // Asegúrate de proporcionar la ruta correcta
-                File audioFileGato = new File("src/sources/audio/miauDo.wav");
+                File audioFile = new File("../sources/audio/do.wav"); // Asegúrate de proporcionar la ruta correcta
+                File audioFileGato = new File("../sources/audio/miauDo.wav");
                 if (!audioFile.exists()) {
                     System.err.println("El archivo de audio no existe.");
                     return;
@@ -189,7 +168,7 @@ public class NewJPanel extends javax.swing.JPanel {
         if (!click && !teclado) {
             try {
                 // Cargamos el archivo de audio
-                File audioFile = new File("src/sources/audio/do.wav"); // Asegúrate de proporcionar la ruta correcta
+                File audioFile = new File("../sources/audio/do.wav"); // Asegúrate de proporcionar la ruta correcta
                 if (!audioFile.exists()) {
                     System.err.println("El archivo de audio no existe.");
                     return;
